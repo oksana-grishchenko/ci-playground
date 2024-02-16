@@ -2,7 +2,7 @@ name: CI-API
 on:
   push:
     paths-ignore:
-      - 'ui'
+      - 'ui/**'
     branches:
       - main
 
