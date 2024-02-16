@@ -2,7 +2,7 @@ name: CI-UI
 on:
   push:
     paths:
-      - 'ui'
+      - 'ui/**'
     branches:
       - main
 
