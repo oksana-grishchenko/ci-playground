@@ -1,0 +1,19 @@
+name: CI-UI
+on:
+  push:
+    paths:
+      - 'ui'
+    branches:
+      - main
+
+
+jobs:
+  check:
+    name: Check-UI
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print
+        run: echo "Check-UI"
+
+

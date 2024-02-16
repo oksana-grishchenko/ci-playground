@@ -1,7 +1,7 @@
-name: CI
+name: CI-API
 on:
   push:
-    paths:
+    paths-ignore:
       - 'ui'
     branches:
       - main
@@ -9,11 +9,11 @@ on:
 
 jobs:
   check:
-    name: Check-UI
+    name: Check-API
     runs-on: ubuntu-latest
 
     steps:
       - name: Print
-        run: echo "Check-UI"
+        run: echo "Check-API"
 
 
