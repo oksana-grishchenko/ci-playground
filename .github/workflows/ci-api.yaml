@@ -18,8 +18,6 @@ jobs:
     steps:
       - name: Print
         run: echo "Check-API"
-      - name: Print
-        run: exit 1
 
 
   another-check:
