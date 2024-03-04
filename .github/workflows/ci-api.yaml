@@ -27,7 +27,7 @@ jobs:
         run: exit 1
 
   merge-gatekeeper:
-    needs: [ Check-API ]
+    needs: [ check ]
     name: Merge Gatekeeper
     if: ${{ always() }}
     runs-on: ubuntu-22.04

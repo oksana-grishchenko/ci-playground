@@ -21,7 +21,7 @@ jobs:
 
 
   merge-gatekeeper:
-    needs: [ Check-UI ]
+    needs: [ check ]
     name: Merge Gatekeeper
     if: ${{ always() }}
     runs-on: ubuntu-22.04
