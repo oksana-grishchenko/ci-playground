@@ -18,6 +18,10 @@ jobs:
     steps:
       - name: Print
         run: echo "Check-API"
+      - name: Print
+        run: exit 1
+
+
   another-check:
     name: Another check
     runs-on: ubuntu-latest
@@ -27,7 +31,6 @@ jobs:
         run: exit 1
 
   merge-gatekeeper:
-    needs: [ check ]
     name: Merge Gatekeeper
     if: ${{ always() }}
     runs-on: ubuntu-22.04
